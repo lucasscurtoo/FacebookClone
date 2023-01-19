@@ -1,0 +1,24 @@
+{
+  "name": "facebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "start": "concurrently \"yarn workspace backend start\" \"yarn workspace frontend start\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.13",
+    "heroicons": "^2.0.13",
+    "react-spinners": "^0.13.8",
+    "yup": "^0.32.11"
+  }
+}
